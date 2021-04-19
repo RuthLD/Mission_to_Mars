@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mission to Mars</title>
     <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
+      rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
   <body>
     <div class="container">
@@ -48,6 +46,24 @@
           </div>
         </div>
       </div>
-    </div>
-  </body>
+      <!-- Section for Hemisphere Title and Image -->
+      <div class="container text-center">
+        <div class="row ml-5 mt-5 mr-5 mb-5">
+            <div class="col-md-12 border border-secondary" style="background-color:lightgrey;">
+              <h2 class="text-primary pt-4 text-center">Mars Hemispheres</h2>
+            </div>
+            {% for item in mars.hemisphere_image_urls %}   
+            <div class="col-md-6 border border-secondary" style="background-color:lightgrey;">
+              <h5 class="text-info">{{item.title}}</h5>
+              <a href={{item.img_url}}>
+                <img class="img-responsive" src={{item.img_url}} alt={{item.title}} style="width:100%">
+              </a>
+            </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      <div>
+    <div>
+  </body>   
 </html>

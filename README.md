@@ -9,10 +9,14 @@ Using BeautifulSoup to visit and collect the most recent information about the p
 	
 ## Results
 The follow are examples returned from the [scraping.py](https://github.com/RuthLD/Mission_to_Mars/blob/main/scraping.py) file.
-1. Example of Article Title and Description:![Img_1.png](https://github.com/RuthLD/Mission_to_Mars/blob/main/Resources/Img_1.png)
-1. Example of Featured Image:![Img_2.png](https://github.com/RuthLD/Mission_to_Mars/blob/main/Resources/Img_2.png)
-1. Example of Facts:![Img_3.png](https://github.com/RuthLD/Mission_to_Mars/blob/main/Resources/Img_3.png)
-1. Example of Hemisphere Images:![Img_4.png](https://github.com/RuthLD/Mission_to_Mars/blob/main/Resources/Img_4.png)
+1. Example of Article Title and Description:
+	* ![Img_1.png](https://github.com/RuthLD/Mission_to_Mars/blob/main/Resources/Img_1.png)
+2. Example of Featured Image:
+	* ![Img_2.png](https://github.com/RuthLD/Mission_to_Mars/blob/main/Resources/Img_2.png)
+3. Example of Facts:
+	* ![Img_3.png](https://github.com/RuthLD/Mission_to_Mars/blob/main/Resources/Img_3.png)
+4. Example of Hemisphere Images:
+	* ![Img_4.png](https://github.com/RuthLD/Mission_to_Mars/blob/main/Resources/Img_4.png)
 The images are returned as URLs to be used in the [app.py](https://github.com/RuthLD/Mission_to_Mars/blob/main/app.py) file to create a simple webpage to scrape for the most recent news about Mars.
 
 ## Webpage

@@ -19,7 +19,7 @@ def scrape_all():
         "featured_image": featured_image(browser),
         "facts": mars_facts(),
         "last_modified": dt.datetime.now(),
-        "hemispheres": hemisphere_image(browser)
+        "mars_hemispheres": hemisphere_image(browser)
     }
 
     # Stop webdriver and return data
@@ -89,7 +89,7 @@ def hemisphere_image(browser):
     # Create a list to hold the images and titles.
     hemisphere_image_urls = []
     # Write code to retrieve the image urls and titles for each hemisphere.
-    for i in range (4):
+    for i in range(4):
         full_image = browser.find_by_tag('h3')
         full_image[i].click()
         html = browser.html
@@ -99,6 +99,8 @@ def hemisphere_image(browser):
         hemisphere_image_url = f'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars{image_url_rel}'
         hemispheres = {"title":hemisphere_title,"img_url":hemisphere_image_url}
         hemisphere_image_urls.append(hemispheres)
+        browser.back()
+
     return hemisphere_image_urls
 
 if __name__ == "__main__":

@@ -90,17 +90,15 @@ def hemisphere_image(browser):
     hemisphere_image_urls = []
     # Write code to retrieve the image urls and titles for each hemisphere.
     for i in range(4):
-        full_image = browser.find_by_tag('h3')
-        full_image[i].click()
+        browser.find_by_css("a.product-item h3")[i].click()
         html = browser.html
         image_soup = soup(html, 'html.parser')
-        image_url_rel = image_soup.find('img', class_='thumb').get('src')
+        image_url_rel = image_soup.find("a", text="Sample").get("href")
         hemisphere_title = image_soup.find('h2', class_='title').get_text()
         hemisphere_image_url = f'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars{image_url_rel}'
-        hemispheres = {"title":hemisphere_title,"img_url":hemisphere_image_url}
+        hemispheres = {"title":hemisphere_title,"img_url":image_url_rel}
         hemisphere_image_urls.append(hemispheres)
         browser.back()
-
     return hemisphere_image_urls
 
 if __name__ == "__main__":

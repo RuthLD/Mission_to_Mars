@@ -17,7 +17,9 @@ The follow are examples returned from the [scraping.py](https://github.com/RuthL
 	* ![Img_3.png](https://github.com/RuthLD/Mission_to_Mars/blob/main/Resources/Img_3.png)
 4. Example of Hemisphere Images:
 	* ![Img_4.png](https://github.com/RuthLD/Mission_to_Mars/blob/main/Resources/Img_4.png)
+
+
 The images are returned as URLs to be used in the [app.py](https://github.com/RuthLD/Mission_to_Mars/blob/main/app.py) file to create a simple webpage to scrape for the most recent news about Mars.
 
 ## Webpage
-The simple web page was created using MongoDB and Flask to scrape the web for the most recent news articles. The page was html is [here](https://github.com/RuthLD/Mission_to_Mars/blob/main/templates/index.html). 
+The simple web page was created using MongoDB and Flask to scrape the web for the most recent news articles. The page html is [here](https://github.com/RuthLD/Mission_to_Mars/blob/main/templates/index.html). 

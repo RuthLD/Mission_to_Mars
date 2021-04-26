@@ -1,11 +1,11 @@
 # Mission_to_Mars
-Using Web Scraping to collect infromation about Mars.
+🌔Using Web Scraping to collect infromation about Mars.
 ## Overview
 Using BeautifulSoup to visit and collect the most recent information about the plant Mars from four different websites.
-1. The first website was the [NASA Mars News Site](https://redplanetscience.com) to get the featured news article title and description. 
-1. The second website was to find the [Featured Image](https://spaceimages-mars.com) from Mars.
-1. The third website was to get a table of weather [facts from Mars](https://galaxyfacts-mars.com) compared to Earth.
-1. The fourth website was to get images of the [four hemispheres of Mars](https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars).
+1. 📰 The first website was the [NASA Mars News Site](https://redplanetscience.com) to get the featured news article title and description. 
+1. 🖼️ The second website was to find the [Featured Image](https://spaceimages-mars.com) from Mars.
+1. 🌡️ The third website was to get a table of weather [facts from Mars](https://galaxyfacts-mars.com) compared to Earth.
+1. 🌓 The fourth website was to get images of the [four hemispheres of Mars](https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars).
 	
 ## Results
 The follow are examples returned from the [scraping.py](https://github.com/RuthLD/Mission_to_Mars/blob/main/scraping.py) file.

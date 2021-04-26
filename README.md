@@ -1,5 +1,5 @@
 # Mission_to_Mars
-Project 10 of Bootcamp Using Web Scraping to collect infromation about Mars.
+Using Web Scraping to collect infromation about Mars.
 ## Overview
 Using BeautifulSoup to visit and collect the most recent information about the plant Mars from four different websites.
 1. The first website was the [NASA Mars News Site](https://redplanetscience.com) to get the featured news article title and description. 
